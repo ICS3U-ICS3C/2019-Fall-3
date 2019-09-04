@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>ICS3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="../JS/main.js"></script>
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+  body {font-size:14px; }
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 style="margin-top:20px;margin-left:20px; margin-bottom:20px" ><b><a href="https://github.com/ICS3U-ICS3C/2019-Spring-3" class="w3-bar-item w3-button w3-hover-white" >Go to GitHub</a><br></h3>
+  </div>
+	  
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a> 
+    <a href="module0.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 0</a> 
+    <a href="module1.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="module2.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="module3.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 3</a> 
+    <a href="module4.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 4</a> 
+    <a href="module5.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 5</a>
+    <a href="module6.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 6</a> 
+    <a href="module7.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 7</a> 
+    <a href="module8.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 8</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w_open()">☰</a>
+  <span>ICS3</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:60px" id="">
+    <h1 class="w3-xxlarge"><b>Module 6 (May 27 - May 31)</b></h1>
+    <p style="font-weight:initial">In this module we will explore basic graphics in HTML/CSS/JS <em>Note:</em> Any material 
+	    presented in this module is fair game for the quiz.  </p>
+  </div>
+ 
+  <!-- Graphics -->
+  <div class="w3-container" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-blue"><b>Graphics in HTML, CSS, JS</b></h1>    
+    <p>Become comfortable with one of the following ways of drawing basic graphics. You will need to be able to draw for tomorrow's activity. For practice, see if you can produce something resembling the bear below.</p><br>
+    <p style="font-weight:initial">Here's an <a href="https://www.w3schools.com/graphics/svg_intro.asp">SVG Tutorial</a> from W3Schools
+    </p><br>
+    <p style="font-weight:initial">Here's a <a href="https://www.w3schools.com/graphics/canvas_intro.asp">Canvas Tutorial</a> from W3Schools
+    </p><br>
+    <p style="font-weight:initial">Here's another Canvas tutorial from <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Drawing_graphics">Mozilla</a>
+    </p><br>
+    <p style="font-weight:initial">Or try JS using the <a href="http://www.graphicsjs.org/">GraphicsJS</a> library
+    </p><br>
+    <img src="http://vectips.com/wp-content/uploads/2017/09/13-teddy-bear.jpg">
+  </div>
+
+	
+  <!-- Hour of Code -->
+  <div class="w3-container" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-blue"><b>Hour of Code</b></h1>    
+    <p style="font-weight:initial">Complete the tutorials to create your own <a href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript">2D JS Breakout Game</a>
+    </p><br>
+    <p style="font-weight:initial"><b>Note:</b> The instructions ask you to create a file called index.html. Don't do this. Call it something else, like breakout.html. You will need to link it to your website, so you don't want to call it index.html because that's the name of your homepage</p><br>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+  </div>
+  
+  <!-- Code Wars -->
+  <div class="w3-container" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-blue"><b>Code Wars</b></h1>    
+    <p style="font-weight:initial">For those who want a challenge, and to further develop your coding skills, 
+	    this came highly recommended! </br>
+	    <a href="https://www.codewars.com/">Code Wars</a>
+    </p><br>
+    <p style="font-weight:initial">Try it out if you're caught up on everything! </p><br>
+  </div>	
+
+
+  <!-- Quiz and Assignment>	  
+  <p style="margin-top:35px"><a href=""><b>Assignment 6: May 17 2019</b></a></p>	  
+  <p><b>Quiz 6: May 24 2019</b></p>
+</div>
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:50px;padding-left:15px;font-size:12px;text-align:left;"> 
+  <p class="w3-right">This work and other materials under  
+    <a href="https://github.com/ICS3U-ICS3C">github.com/ICS3U-ICS3C</a>, <br>are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Int'l License</a>.<br>
+  </p>
+</div>
+    
+
+
+<!--END OF PAGE CONTENT-->	
+	
+	
+<script>
+// Script to open and close sidebar
+function w_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>ICS3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+  body {font-size:14px; }
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 style="margin-top:20px;margin-left:20px; margin-bottom:20px" ><b><a href="https://github.com/ICS3U-ICS3C/2019-Spring-3" class="w3-bar-item w3-button w3-hover-white" >Go to GitHub</a><br></h3>
+  </div>
+	  
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a> 
+    <a href="module0.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 0</a> 
+    <a href="module1.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="module2.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="module3.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 3</a> 
+    <a href="module4.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 4</a> 
+    <a href="module5.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 5</a>
+    <a href="module6.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 6</a> 
+    <a href="module7.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 7</a> 
+    <a href="module8.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 8</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w_open()">☰</a>
+  <span>ICS3</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- M0 Header -->
+  <div class="w3-container" style="margin-top:60px" id="">
+    <h1 class="w3-xxlarge"><b>Module 0 (Feb 11 - 15)</b></h1>
+    <p style="font-weight:initial">We'll begin by getting to know our way around GitHub, a tool for keeping our files organised and 
+	    for submitting assignments</p>
+  </div>
+	
+  <!-- M0 Content -->
+  <div class="w3-container" id="M0" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-blue"><b>File Maintenance and Version Control</b></h1>
+    <p style="font-weight:initial">  
+    We'll be using GitHub (link at top left) to organise our files. It lets you save different versions of a project as you go along, 
+	    and keeps shared work organised when working on group projects.
+    It'as also where you'll be accessing and submitting coding assignments, but we'll get to coding later.	      
+    </p>
+
+    <!-- Intro to Github -->	  
+    <ol style="font-weight:initial">
+      <li>Say <a href="https://guides.github.com/activities/hello-world/">Hello</a> to GitHub! It's a steep learning curve, so expect 
+	      that it will take us some time to figure it out.</li>
+      <li>Explore GitHub and complete Asst-0</li>
+      <li>Make your own<a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/"> GitHub webpage</a> (like this one) by creating a gh-pages branch from your own Repository. We will use your github page to organise your JavaScript assignments later in the course. GitHub hosts your pages for free!</li>
+      <li>If you want to get fancy with your READMEs, and generally be more stylish, look at <a href="https://guides.github.com/features/mastering-markdown/">Markdown Syntax</a>, used to style .md files</li>
+    </ol>
+
+    <!--Quiz and Asst-->	  
+    <p style="margin-top:35px"><b><a href="https://classroom.github.com/a/ciRyRgfA">Assignment 0</a>: Feb 15 2019</b></p>	  
+    
+  </div>
+</div>
+  
+<!--END OF PAGE CONTENT-->
+  
+  
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:50px;padding-left:15px;font-size:12px;text-align:left;"> 
+  <p class="w3-right">This work and other materials under  
+    <a href="https://github.com/ICS3U-ICS3C">github.com/ICS3U-ICS3C</a>, <br>are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Int'l License</a>.<br>
+  </p>
+</div>
+	
+<script>
+  // Script to open and close sidebar
+  function w_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function w_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none"; 
+  }
+</script>
+</body>
+</html>

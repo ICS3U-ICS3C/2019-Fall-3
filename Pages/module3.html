@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>ICS3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+  body {font-size:14px; }
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 style="margin-top:20px;margin-left:20px; margin-bottom:20px" ><b><a href="https://github.com/ICS3U-ICS3C/2019-Spring-3" class="w3-bar-item w3-button w3-hover-white" >Go to GitHub</a><br></h3>
+  </div>
+	  
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Syllabus</a> 
+    <a href="module0.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 0</a>
+    <a href="module1.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="module2.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 2</a> 
+    <a href="module3.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 3</a> 
+    <a href="module4.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 4</a> 
+    <a href="module5.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 5</a>
+    <a href="module6.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 6</a> 
+    <a href="module7.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 7</a> 
+    <a href="module8.html" onclick="w_close()" class="w3-bar-item w3-button w3-hover-white">Module 8</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w_open()">☰</a>
+  <span>ICS3</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+
+	
+	
+	
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- M3 Header -->
+  <div class="w3-container" style="margin-top:60px" id="">
+    <h1 class="w3-xxlarge"><b>Module 3 (Apr 1 - 24)</b></h1>
+    <p style="font-weight:initial">This module will provide a cursory introduction to computer programming topics, including loops and arrays. <em>Note:</em> Any material presented in this module is fair game for the quiz. </p>
+  </div>
+
+  <!-- JS Loops Practice -->
+  <div class="w3-container" id="M3" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-blue"><b>JS Loops Intro</b></h1>
+    <p style="font-weight:initial">Here's a note on JS <a href="../Notes/Loops_Intro.docx">while loops and for loops</a></p> 
+    <p>Try the following exercises:</p>    
+    <ol style="font-weight:initial">
+      <li>Write a program that iterates (counts through) the integers from 1 to 100. But for multiples of three print "Three!" instead of the number and for the multiples 
+	      of five print "Five!". For numbers which are multiples of both three and five print "Threefive!".<br>
+      Expected output: 1 2 Three! 4 Five! 6 7 8 Three! Five! 11 ...</li><br>
+      <li>Write a program to construct the following pattern, using a nested ‘for’ loop.<br><br> 
+	* <br>  
+	* * <br> 
+	* * * <br> 
+	* * * * <br> 
+	* * * * * <br>
+      </li><br> 
+      <li>Need a challenge? Let the user determine how many rows will print. Let the user choose which symbol is printed. </li><br>
+      <li>Create a Guess-The-Number game. You'll need to generate a random number for the user to guess. Let the user know if they should guess higher or lower, and when they guess the number, how many tries i took them. You can also choose the range in advance or allow the user to determine the range. Things to consider: Will you limit the user's guess attempts to a certain number (for loop) or let them keep guessing until they get it (while loop). You might also want to give the user the option to quit</li>
+      <li><a href="../Notes/LoopsPracticeQuiz.pdf">Loops Practice Quiz Solutions</a></li>
+    </ol>
+  </div>	
+	
+
+	
+  <!-- JS Skills: Lists, Loops, and Functions -->
+  <div class="w3-container" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-blue"><b>JS Skills Recap: Lists, Functions, and Loops</b></h1>
+    <p style="font-weight:initial"></p>
+    
+      <p>Lists (Arrays) 
+        <ul style="font-weight:initial">
+	  <li>You should <b>know</b>: How to create a list; How to access (index) elements in a list; How to append (add) elements to a list; How to iterate (loop) through items in a list</li>
+	  <li><b>Summary</b> notes for <a href="https://javascript.info/array">arrays and array methods</a>. You should <b>Read</b> the following sections: <em>Declaration, Loops, and A word about Length</em></li>
+	  <li><b>Try</b> these exercises from the Codecademy tutorial to test your understanding of <a href="https://www.codecademy.com/courses/introduction-to-javascript/lessons/arrays/exercises/arrays">Intro to Arrays</a></li>
+	  <li><b>Try</b> <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1">this quiz</a> to test your understanding of Arrays and indexing</li>
+	</ul>
+      </p><br>
+      <p>Functions 
+        <ul style="font-weight:initial">
+	  <li>You should <b>know</b>: How to create a function with single or multiple parameters; The difference between parameters and arguments; How to call a function; How to write a docstring; What 'return' is</li>
+	  <li><b>Summary</b> notes for <a href="https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99">functions</a> lesson</li>
+	  <li><b>Try</b> <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1">this quiz</a> to test your understanding of Functions</li>
+	</ul>
+      </p><br>
+      <p>Loops 
+        <ul style="font-weight:initial">
+          <li>You should <b>know</b>: When to use a while loop versus a for loop; The basic structure of 'while' and 'for' loops</li>
+          <li><b>Summary</b> notes for <a href="../Notes/Loops_Intro.docx">Intro to Loops</a></li>
+	  <li><b>Try</b> these exercises from the Codecademy tutorial to test your understanding of <a href="https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/loops">Intro to Loops</a></li>		
+	</ul>    
+      </p>	
+  </div>
+
+  <!-- Practice Quiz -->
+  <div class="w3-container" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-blue"><b>Arrays Practice Quiz</b></h1>    
+    <p style="font-weight:initial">Try these <a href="../Exercises/Araays_Loops_Practice_Quiz.docx">Practic Exercises</a> to prepare for your quiz on Arrays</br>
+    </p>
+  </div>	
+	
+	
+    <!--Quiz and Asst https://classroom.github.com/a/UbLdjC9N -->
+    <p style="margin-top:35px"><b><a href="">Assignment 3: TBD 2019</a></b></p>	  
+    <p><b>Quiz 3: Apr 26 2019</b></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:50px;padding-left:15px;font-size:12px;text-align:left;"> 
+  <p class="w3-right">This work and other materials under  
+    <a href="https://github.com/ICS3U-ICS3C">github.com/ICS3U-ICS3C</a>, <br>are licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Int'l License</a>.<br>
+  </p>
+</div>
+    
+
+
+<!--END OF PAGE CONTENT-->	
+	
+	
+<script>
+  // Script to open and close sidebar
+  function w_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+ 
+  function w_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
