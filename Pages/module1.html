@@ -9,6 +9,25 @@
   body {font-size:14px; }
   .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
   .w3-half img:hover{opacity:1}
+  
+  .collapsible {
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: none;
+}
+
+.active, .collapsible:hover {
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
 </style>
 <body>
 
@@ -92,7 +111,7 @@
     <button class="collapsible" style="background-color:rgba(10, 10, 10,0.1)">Lesson 1.1:  CSS Setup and Selectors</button>
     <div class="content">
       <p style="margin-top:15px; font-weight:initial">
-Intro to CSS			Inline styles			The <style> tag		The .css file
+Intro to CSS			Inline styles			The 'style' tag		The .css file
 Linking the CSS file		Tag name			Class name			Multiple classes
 ID name			Classes and IDS		Specificity	 		Changing selectors
 Nested elements		Chaining and specificity 	Important 			Multiple Selectors  
@@ -144,6 +163,20 @@ Text align			Color				Opacity
     document.getElementById("myOverlay").style.display = "none";
   }
 
+  // Script for collapsible ethics	
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }	
 </script>
 
 </body>
