@@ -57,15 +57,35 @@
 	    <em>Note:</em> Any material presented in this module is fair game for the quiz. </p>
   </div>
 
-  <!--DOM -->
-  <div class="w3-container" style="margin-top:45px">	
-    <h1 class="w3-xlarge w3-text-blue"><b>Intro to the Document Object Model</b></h1>
-    <p style="font-weight:initial">
-    JavaScript <a href="../Notes/JavaScript_Cheat_Sheet_Daniel.pdf">Cheat Sheet</a>, courtesy of Daniel K.</li>	      
-    </p>
-  </div>	
-	
 
+  <!-- The DOM -->
+  <div class="w3-container" id="M5" style="margin-top:35px">
+    <h1 class="w3-xlarge w3-text-blue"><b>Intro to the Document Object Model</b></h1>
+    <p style="font-weight:initial"></p>
+    <ol style="font-weight:initial">
+      <li>See the section on W3Schools about Output using innerHTML <a href="https://www.w3schools.com/js/js_output.asp">here</a></li>
+      <li>Incorporate innerHTML into your website so that the output from your JS exercises is displayed on your webpage 
+	      (instead of an alert box).</li>
+      <li>And review this JavaScript <a href="../Notes/JavaScript_Cheat_Sheet_Daniel.pdf">Cheat Sheet</a>, courtesy of Daniel K.</li>
+    </ol>
+  </div>
+	
+  <!--InnerHTML Example-->
+  <div class="w3-container" style="margin-top:35px;margin-left:35px;">
+    <figcaption>mypage.html</figcaption>
+    <pre class="prettyprint"><fig> 
+  &ltp id="demo" onclick="myFunction()"&gtClick me to change my HTML content&lt/p&gt
+    </fig></pre>
+	  
+    <figcaption>main.js</figcaption>
+    <pre class="prettyprint"><code> 
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed!"; 
+  }
+    </code></pre>
+  </div>
+	
+	
   <!--Functions -->
   <div class="w3-container" style="margin-top:45px">	
     <h1 class="w3-xlarge w3-text-blue"><b>More on JS Functions</b></h1>
